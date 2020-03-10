@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The VR Escape Room Experience
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f49cab216fcf4408a665065999ddcd1, type: 2}
-  m_sharedMaterial: {fileID: -6657863092305902463, guid: 9f49cab216fcf4408a665065999ddcd1,
+  m_fontAsset: {fileID: 11400000, guid: cc260e277ad76479687fea388ed13015, type: 2}
+  m_sharedMaterial: {fileID: 6582114968076257547, guid: cc260e277ad76479687fea388ed13015,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -334,8 +334,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f49cab216fcf4408a665065999ddcd1, type: 2}
-  m_sharedMaterial: {fileID: -6657863092305902463, guid: 9f49cab216fcf4408a665065999ddcd1,
+  m_fontAsset: {fileID: 11400000, guid: cc260e277ad76479687fea388ed13015, type: 2}
+  m_sharedMaterial: {fileID: 6582114968076257547, guid: cc260e277ad76479687fea388ed13015,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1101,8 +1101,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Volume Control
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f49cab216fcf4408a665065999ddcd1, type: 2}
-  m_sharedMaterial: {fileID: -6657863092305902463, guid: 9f49cab216fcf4408a665065999ddcd1,
+  m_fontAsset: {fileID: 11400000, guid: cc260e277ad76479687fea388ed13015, type: 2}
+  m_sharedMaterial: {fileID: 6582114968076257547, guid: cc260e277ad76479687fea388ed13015,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2258,8 +2258,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f49cab216fcf4408a665065999ddcd1, type: 2}
-  m_sharedMaterial: {fileID: -6657863092305902463, guid: 9f49cab216fcf4408a665065999ddcd1,
+  m_fontAsset: {fileID: 11400000, guid: cc260e277ad76479687fea388ed13015, type: 2}
+  m_sharedMaterial: {fileID: 6582114968076257547, guid: cc260e277ad76479687fea388ed13015,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2619,8 +2619,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Bone Zone
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f49cab216fcf4408a665065999ddcd1, type: 2}
-  m_sharedMaterial: {fileID: -6657863092305902463, guid: 9f49cab216fcf4408a665065999ddcd1,
+  m_fontAsset: {fileID: 11400000, guid: cc260e277ad76479687fea388ed13015, type: 2}
+  m_sharedMaterial: {fileID: 6582114968076257547, guid: cc260e277ad76479687fea388ed13015,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3011,8 +3011,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f49cab216fcf4408a665065999ddcd1, type: 2}
-  m_sharedMaterial: {fileID: -6657863092305902463, guid: 9f49cab216fcf4408a665065999ddcd1,
+  m_fontAsset: {fileID: 11400000, guid: cc260e277ad76479687fea388ed13015, type: 2}
+  m_sharedMaterial: {fileID: 6582114968076257547, guid: cc260e277ad76479687fea388ed13015,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
