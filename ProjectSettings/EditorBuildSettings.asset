@@ -6,10 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VR Beginner/Scenes/Final/EscapeRoom.unity
-    guid: 0f290611f0f8be4419d06b71aba4e36a
-  m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c8e652a12aee94d40a18364e3c177aa8,
-      type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9a6c1974bdff2264ab6ee03f05a7b579,
-      type: 2}
+    path: Assets/Scenes/Menu.unity
+    guid: 95186f045a6204b7f9e2a82f8ac7a53d
+  - enabled: 1
+    path: Assets/Scenes/Labyrinth.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 84b61305eb5d142bcacd06c71a40edfd
+  - enabled: 1
+    path: Assets/Scenes/transfer.unity
+    guid: d32d4196eaf454711a793ddbf7491ec4
+  - enabled: 1
+    path: Assets/Scenes/Hard Labyrinth.unity
+    guid: c3dbdf19e4f4a4baca578f0adc3e7e18
+  m_configObjects: {}
