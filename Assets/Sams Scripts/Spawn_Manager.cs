@@ -7,7 +7,8 @@ public class Spawn_Manager : MonoBehaviour
 
     public Transform[] spawnpoints;
     public GameObject Banana;
-    // Start is called before the first frame update
+
+
     void Start()
     {
         spawnbanana();
