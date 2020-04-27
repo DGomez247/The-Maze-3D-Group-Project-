@@ -10636,9 +10636,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1277816588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c0027a8145146d3ab8bb602b6c8614, type: 3}
+  m_Script: {fileID: 11500000, guid: c90c2850ee6f7e04badf015991514746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnpoints:
+  - {fileID: 736515608}
+  - {fileID: 1801698240}
+  - {fileID: 2120477539}
+  - {fileID: 811156429}
+  - {fileID: 170755563}
+  Banana: {fileID: 6817130880938987153, guid: 68cbf20978d49234f9ddaf002099f69a, type: 3}
 --- !u!114 &1277816591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10648,9 +10655,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1277816588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c0027a8145146d3ab8bb602b6c8614, type: 3}
+  m_Script: {fileID: 11500000, guid: c90c2850ee6f7e04badf015991514746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnpoints:
+  - {fileID: 1881009065}
+  - {fileID: 2002139534}
+  - {fileID: 1080427000}
+  - {fileID: 612824673}
+  - {fileID: 358360263}
+  Banana: {fileID: 8448781935797011403, guid: 6aea103ae6a841c4290a86f987b2543f, type: 3}
 --- !u!114 &1277816592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10660,9 +10674,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1277816588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c0027a8145146d3ab8bb602b6c8614, type: 3}
+  m_Script: {fileID: 11500000, guid: c90c2850ee6f7e04badf015991514746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnpoints:
+  - {fileID: 2146288312}
+  - {fileID: 1785597944}
+  - {fileID: 736199993}
+  - {fileID: 1274151329}
+  - {fileID: 1807948187}
+  Banana: {fileID: -7009230819733649104, guid: 5a58e04df764d0846a63cd9348f74075, type: 3}
 --- !u!114 &1277816593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10672,9 +10693,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1277816588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c0027a8145146d3ab8bb602b6c8614, type: 3}
+  m_Script: {fileID: 11500000, guid: c90c2850ee6f7e04badf015991514746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnpoints:
+  - {fileID: 2085943308}
+  - {fileID: 234995972}
+  - {fileID: 1115329195}
+  - {fileID: 529615277}
+  - {fileID: 1484139916}
+  Banana: {fileID: 2585377255277113315, guid: 3ec20b39f37978d47bf4514eb572bc56, type: 3}
 --- !u!1 &1285901447
 GameObject:
   m_ObjectHideFlags: 0
