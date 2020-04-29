@@ -43,7 +43,7 @@ public class countdown1 : MonoBehaviour
 
             if (time < 0)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
 
