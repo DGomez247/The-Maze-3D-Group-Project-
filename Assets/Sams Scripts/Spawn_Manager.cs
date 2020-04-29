@@ -6,18 +6,17 @@ public class Spawn_Manager : MonoBehaviour
 {
 
     public Transform[] spawnpoints;
-    public GameObject Banana;
+    public GameObject Car_Part;
 
 
     void Start()
     {
-        spawnbanana();
+        spawncarpart();
     }
 
-public void spawnbanana()
+public void spawncarpart()
     {
         int spawnPI = Random.Range(0, spawnpoints.Length);
-        Instantiate(Banana, spawnpoints[spawnPI].position, Quaternion.identity);
-        Debug.Log("Spawned a bannana at" + spawnpoints[spawnPI]);
+        Instantiate(Car_Part, spawnpoints[spawnPI].position, Quaternion.identity);
     }
 }
