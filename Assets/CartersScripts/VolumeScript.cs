@@ -15,7 +15,7 @@ public class VolumeScript : MonoBehaviour
     {
         
     }
-    void onSliderMove(float val)
+    public void onSliderMove(float val)
     {
         AudioListener.volume = val;
     }
