@@ -613,12 +613,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 387525200036820405}
   m_PrefabAsset: {fileID: 0}
---- !u!81 &196340446 stripped
-AudioListener:
-  m_CorrespondingSourceObject: {fileID: 387525200176422763, guid: 521a83f3e56c1f841929a6f64a59d97f,
-    type: 3}
-  m_PrefabInstance: {fileID: 387525200036820405}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &216689697
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 286041253}
   - component: {fileID: 286041254}
+  - component: {fileID: 286041255}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -815,8 +810,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 196340446}
-        m_MethodName: set_volume
+      - m_Target: {fileID: 286041255}
+        m_MethodName: onSliderMove
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -826,6 +821,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &286041255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286041252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a94491b9dbf644fb6afe332b7b5808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &306734275
 GameObject:
   m_ObjectHideFlags: 0
