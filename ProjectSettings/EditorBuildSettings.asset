@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Bone Zone/Maze.unity
     guid: 96e6744323e2c8b44bef3e0732e723a3
+  - enabled: 1
+    path: Assets/Scenes/The Bone Zone/Credits.unity
+    guid: 534f6d71b02988e47ab86da1e1e238a2
   m_configObjects: {}
