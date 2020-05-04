@@ -34,11 +34,13 @@ public class Inventory : MonoBehaviour
     }
     public void Start()
     {
+        Debug.Log("start");
         allslots = 4;
         slot = new GameObject[allslots];
         inventory = GameObject.Find("Inventory");
 
         while(i < allslots){
+            Debug.Log("here");
                 slot[i] = inventory.transform.GetChild(i).gameObject;
                 if (slot[i].GetComponent<Slot>().item == null)
                 {
@@ -74,19 +76,7 @@ public class Inventory : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Item")
-        {
-            print("Here");
-            GameObject itempickedup = other.gameObject;
-            Item item = itempickedup.GetComponent<Item>();
-
-            AddItem(itempickedup,item.ID,item.type, item.description,item.icon);
-        }
-    }
-
-    void AddItem(GameObject itemobject,int itemID, string ItemType, string ItemDescription, Sprite itemIcon)
+    public void AddItem(GameObject itemobject,int itemID, string ItemType, string ItemDescription, Sprite itemIcon)
     {
         count++;
         if(count == 1)

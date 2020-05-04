@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Bone Zone/Credits.unity
     guid: 534f6d71b02988e47ab86da1e1e238a2
+  - enabled: 1
+    path: Assets/Scenes/The Bone Zone/Lobby Scene.unity
+    guid: 8df37078f077f49378a1ec8dd4f10475
   m_configObjects: {}

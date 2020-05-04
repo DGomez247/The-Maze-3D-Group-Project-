@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IPunObservable
 {
     public CharacterController controller;
     public float speed = 12f;
@@ -50,5 +51,10 @@ public class PlayerMovement : MonoBehaviour
             footsteps.Stop();
         }
         controller.Move(move * workingSpeed * Time.deltaTime);
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        throw new System.NotImplementedException();
     }
 }
