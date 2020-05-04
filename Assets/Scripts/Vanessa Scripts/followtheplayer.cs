@@ -32,20 +32,20 @@ public class followtheplayer : MonoBehaviour
 
     void FindClosestPlayer(){
         float distancetoclosestplayer = Mathf.Infinity;
-        Player closestPlayer = null;
-        Enemy[] allEnemies = GameObject.FindObjectsOfType<closestPlayer>();
+        thisPlayer closestPlayer = null;
+        thisPlayer[] allPlayers = GameObject.FindObjectsOfType<thisPlayer>();
 
-        foreach (Player currentPlayer in allPlayers){
-            float distancetoplayer = (currentPlayer.transform.psoition - this.transform.position).sqrMagnitude;
+        foreach (thisPlayer currentPlayer in allPlayers){
+            float distancetoplayer = (currentPlayer.transform.position - this.transform.position).sqrMagnitude;
             if (distancetoplayer < distancetoclosestplayer)
             {
                 distancetoclosestplayer = distancetoplayer;
                 closestPlayer = currentPlayer;
 
-                GameObject.gameObject.tag = "closestPlayer";
+              currentPlayer.tag = "closestPlayer";
             }
             else{
-                GameObject.gameObject.tag = "Player";
+                currentPlayer.tag = "otherPlayer";
             }
         }
 
