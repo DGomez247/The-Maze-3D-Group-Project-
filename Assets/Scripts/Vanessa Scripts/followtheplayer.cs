@@ -25,11 +25,35 @@ public class followtheplayer : MonoBehaviour
     {
         if(!resting)
         nma.SetDestination(target.transform.position);
+
+        FindClosestPlayer();
+
+    }
+
+    void FindClosestPlayer(){
+        float distancetoclosestplayer = Mathf.Infinity;
+        Player closestPlayer = null;
+        Enemy[] allEnemies = GameObject.FindObjectsOfType<closestPlayer>();
+
+        foreach (Player currentPlayer in allPlayers){
+            float distancetoplayer = (currentPlayer.transform.psoition - this.transform.position).sqrMagnitude;
+            if (distancetoplayer < distancetoclosestplayer)
+            {
+                distancetoclosestplayer = distancetoplayer;
+                closestPlayer = currentPlayer;
+
+                GameObject.gameObject.tag = "closestPlayer";
+            }
+            else{
+                GameObject.gameObject.tag = "Player";
+            }
+        }
+
     }
     private void OnCollisionEnter(Collision collision)
     {
         print("collision");
-        if (collision.collider.CompareTag("Player")&&!resting)
+        if (collision.collider.CompareTag("closestPlayer")&&!resting)
         {
             StartCoroutine(bite());
         }
