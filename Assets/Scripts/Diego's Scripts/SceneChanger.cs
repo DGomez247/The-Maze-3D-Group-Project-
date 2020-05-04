@@ -21,12 +21,12 @@ public class SceneChanger : MonoBehaviour
 
     public void loadControls()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
     public void LoadMultiplayer()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 
     public void Quitgame()

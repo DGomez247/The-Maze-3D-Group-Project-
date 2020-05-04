@@ -15,22 +15,22 @@ public class Inventory : MonoBehaviour
     int i = 0;
     int count = 0;
 
-    Animator anim;
-    Animator anim2;
-    Animator anim3;
-    Animator anim4;
+    //Animator anim;
+    //Animator anim2;
+    //Animator anim3;
+    //Animator anim4;
 
-    public Canvas message;
-    public Canvas message2;
-    public Canvas message3;
-    public Canvas message4;
+    //public Canvas message;
+    //public Canvas message2;
+    //public Canvas message3;
+    //public Canvas message4;
 
     public void Awake()
     {
-        anim = message.GetComponent<Animator>();
-        anim2 = message2.GetComponent<Animator>();
-        anim3 = message3.GetComponent<Animator>();
-        anim4 = message4.GetComponent<Animator>();
+        //anim = message.GetComponent<Animator>();
+        //anim2 = message2.GetComponent<Animator>();
+        //anim3 = message3.GetComponent<Animator>();
+        //anim4 = message4.GetComponent<Animator>();
     }
     public void Start()
     {
@@ -68,10 +68,10 @@ public class Inventory : MonoBehaviour
         
         if (Input.GetKey(KeyCode.E))
         {
-            anim.SetTrigger("escPressed");
-            anim2.SetTrigger("escPressed");
-            anim3.SetTrigger("escPressed");
-            anim4.SetTrigger("escPressed");
+            //anim.SetTrigger("escPressed");
+            //anim2.SetTrigger("escPressed");
+            //anim3.SetTrigger("escPressed");
+            //anim4.SetTrigger("escPressed");
         }
     }
 
@@ -81,23 +81,23 @@ public class Inventory : MonoBehaviour
         count++;
         if(count == 1)
         {
-            anim.SetTrigger("buttonPressed");
+            //anim.SetTrigger("buttonPressed");
              if (Input.GetKey(KeyCode.E))
-        {
-            anim.SetTrigger("escPressed");
-        }
+            {
+            //anim.SetTrigger("escPressed");
+            }
         }
         else if(count == 2)
         {
-            anim2.SetTrigger("buttonPressed");
+            //anim2.SetTrigger("buttonPressed");
         }
         else if(count == 3)
         {
-            anim3.SetTrigger("buttonPressed");
+            //anim3.SetTrigger("buttonPressed");
         }
         else if(count == 4)
         {
-            anim4.SetTrigger("buttonPressed");
+            //anim4.SetTrigger("buttonPressed");
             Wall.SetActive(false);
         }
         //print("Here");

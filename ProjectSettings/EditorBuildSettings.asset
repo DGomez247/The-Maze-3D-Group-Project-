@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Bone Zone/Lobby Scene.unity
     guid: 8df37078f077f49378a1ec8dd4f10475
+  - enabled: 1
+    path: Assets/Scenes/The Bone Zone/Controls.unity
+    guid: a3ac7ba188990324f90a3c6198a22cb8
   m_configObjects: {}
