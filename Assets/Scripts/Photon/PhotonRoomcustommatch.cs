@@ -85,6 +85,7 @@ public class PhotonRoomcustommatch : MonoBehaviourPunCallbacks, IInRoomCallbacks
                 }
                 if(timeToStart <= 0)
                 {
+
                     StartGame();
                 }
 
@@ -196,6 +197,7 @@ public class PhotonRoomcustommatch : MonoBehaviourPunCallbacks, IInRoomCallbacks
             IsGameLoaded = true;
             if (MultiPlayerSetting.multiplayerSetting.delaystart)
             {
+                PhotonNetwork.AutomaticallySyncScene = true;
                 PV.RPC("RPC_LoadedGameScene", RpcTarget.MasterClient);
             }
             else {
