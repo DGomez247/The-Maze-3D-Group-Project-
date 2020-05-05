@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     private bool inventoryon = false;
     public GameObject inventory;
     public GameObject Wall;
+    public GameObject RuinedCar;
 
     private int allslots;
     private int enabledslots;
@@ -99,6 +100,7 @@ public class Inventory : MonoBehaviour
         else if(count == 4)
         {
             //anim4.SetTrigger("buttonPressed");
+            RuinedCar.SetActive(false);
             Wall.SetActive(false);
         }
         //print("Here");

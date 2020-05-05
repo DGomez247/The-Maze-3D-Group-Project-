@@ -28,7 +28,7 @@ MonoBehaviour:
   ID: 0
   type: 
   description: 
-  icon: {fileID: 21300000, guid: 08a47e6113f8be147b346356105aab6b, type: 3}
+  icon: {fileID: 21300000, guid: ffb38eee134d21b429ddfd75bc7b03aa, type: 3}
   pickedup: 0
 --- !u!114 &3066113041501975296
 MonoBehaviour:
