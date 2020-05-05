@@ -5,8 +5,7 @@ using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 public class followtheplayer : MonoBehaviour
 {
-    thisPlayer closestPlayer = null;
-
+    GameObject closestPlayer = null;
     public GameObject target = null;
     private NavMeshAgent nma = null;
     bool resting = false;
@@ -47,7 +46,7 @@ public class followtheplayer : MonoBehaviour
             if (distancetoplayer < distancetoclosestplayer)
             {
                 distancetoclosestplayer = distancetoplayer;
-                closestPlayer = currentPlayer;
+                closestPlayer = currentPlayer.gameObject;
 
             }
 
