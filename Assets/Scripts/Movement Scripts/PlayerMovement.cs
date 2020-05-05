@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour, IPunObservable
 {
     private PhotonView PV;
     public CharacterController controller;
-    public float speed = 12f;
+    public float speed = 20f;
     float baseFootstepVolume;
     public AudioSource footsteps;
 

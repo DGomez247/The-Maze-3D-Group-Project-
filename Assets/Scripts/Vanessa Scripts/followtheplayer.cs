@@ -57,7 +57,7 @@ public class followtheplayer : MonoBehaviour
         print("collision");
         if (collision.collider.CompareTag("Player")&&!resting)
         {
-            StartCoroutine(bite());
+            //StartCoroutine(bite());
         }
     }
     private IEnumerator bite()
