@@ -5,7 +5,7 @@ using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 public class followtheplayer : MonoBehaviour
 {
-
+    thisPlayer closestPlayer = null;
 
     public GameObject target = null;
     private NavMeshAgent nma = null;
@@ -23,37 +23,40 @@ public class followtheplayer : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(!resting)
-        nma.SetDestination(target.transform.position);
+        if (!resting)
+        {
 
-        FindClosestPlayer();
+            FindClosestPlayer();
 
+            nma.SetDestination(closestPlayer.transform.position);
+
+
+
+        }
     }
 
-    void FindClosestPlayer(){
+    void FindClosestPlayer()
+    {
         float distancetoclosestplayer = Mathf.Infinity;
-        thisPlayer closestPlayer = null;
+
         thisPlayer[] allPlayers = GameObject.FindObjectsOfType<thisPlayer>();
 
-        foreach (thisPlayer currentPlayer in allPlayers){
+        foreach (thisPlayer currentPlayer in allPlayers)
+        {
             float distancetoplayer = (currentPlayer.transform.position - this.transform.position).sqrMagnitude;
             if (distancetoplayer < distancetoclosestplayer)
             {
                 distancetoclosestplayer = distancetoplayer;
                 closestPlayer = currentPlayer;
 
-              currentPlayer.tag = "closestPlayer";
             }
-            else{
-                currentPlayer.tag = "otherPlayer";
-            }
-        }
 
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
         print("collision");
-        if (collision.collider.CompareTag("closestPlayer")&&!resting)
+        if (collision.collider.CompareTag("Player")&&!resting)
         {
             StartCoroutine(bite());
         }
