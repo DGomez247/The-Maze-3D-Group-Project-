@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -143,4 +144,18 @@ public class Inventory : MonoBehaviour
             return false;
         }
     }
+
+    //public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    //{
+    //    if (stream.IsWriting)
+    //    {
+    //        stream.SendNext(slot);
+    //        //stream.SendNext(input.z);
+    //    }
+    //    else
+    //    {
+    //        slot = (GameObject[])stream.ReceiveNext();
+    //       //input.z = (float)stream.ReceiveNext();
+    //    }
+    //}
 }
