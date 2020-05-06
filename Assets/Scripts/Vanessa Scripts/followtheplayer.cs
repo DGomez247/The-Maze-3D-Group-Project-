@@ -66,7 +66,7 @@ public class followtheplayer : MonoBehaviour
     {
         biteSound.Play();
         biteCound++;
-        FindObjectOfType<countdown1>().time-=30;
+        FindObjectOfType<countdown1>().time-=10;
         animator.SetTrigger("attack");
         resting = true;
         yield return new WaitForSeconds(1);
