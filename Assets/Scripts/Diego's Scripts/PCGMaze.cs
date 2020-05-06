@@ -19,5 +19,6 @@ public class PCGMaze : MonoBehaviour
         int spawnPoint = Random.Range(0, spawnpoints.Length);
         Instantiate(Wall, spawnpoints[spawnPoint].position, spawnpoints[spawnPoint].rotation);
         FindObjectOfType<NavMeshSurface>().BuildNavMesh();
+        
     }
 }

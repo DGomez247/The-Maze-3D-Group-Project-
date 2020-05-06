@@ -76,4 +76,14 @@ public class followtheplayer : MonoBehaviour
         }
         resting = false;
     }
+    public void hit(){
+        StartCoroutine(stun());
+    }
+    public IEnumerator stun()
+    {
+        biteSound.Play();
+        resting = true;
+        yield return new WaitForSeconds(5);
+        resting = false;
+    }
 }
