@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour, IPunObservable
     public AudioSource footsteps;
 
     public InputStr input;
-
+    public Animator animator;
     public struct InputStr
     {
         public float x;
@@ -36,6 +36,12 @@ public class PlayerMovement : MonoBehaviour, IPunObservable
             input.z = Input.GetAxis("Vertical");
             bool crouching = Input.GetKey(KeyCode.LeftControl);
             bool running = Input.GetKey(KeyCode.LeftShift) && !crouching;
+             if(input.x==0&&input.z==0){
+                animator.SetBool("walking",false);
+            }
+            else{
+                animator.SetBool("walking",true);
+            }
             if (crouching)
             {
                 workingSpeed *= 0.66f;
@@ -72,6 +78,12 @@ public class PlayerMovement : MonoBehaviour, IPunObservable
             input.z = Input.GetAxis("Vertical");
             bool crouching = Input.GetKey(KeyCode.LeftControl);
             bool running = Input.GetKey(KeyCode.LeftShift) && !crouching;
+            if(input.x==0&&input.z==0){
+                animator.SetBool("walking",false);
+            }
+            else{
+                animator.SetBool("walking",true);
+            }
             if (crouching)
             {
                 workingSpeed *= 0.66f;
@@ -88,6 +100,7 @@ public class PlayerMovement : MonoBehaviour, IPunObservable
             {
                 footsteps.pitch = 0.5f;
             }
+
             Vector3 move = transform.right * input.x + transform.forward * input.z;
             if (move != Vector3.zero && !footsteps.isPlaying)
             {

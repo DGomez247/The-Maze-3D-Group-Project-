@@ -299,6 +299,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 387525200365711568, guid: 521a83f3e56c1f841929a6f64a59d97f,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7936748940534105123}
     - target: {fileID: 387525200365711569, guid: 521a83f3e56c1f841929a6f64a59d97f,
         type: 3}
       propertyPath: m_Name
@@ -419,6 +424,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2663156210489677766, guid: 521a83f3e56c1f841929a6f64a59d97f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.03086979
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663156210489677766, guid: 521a83f3e56c1f841929a6f64a59d97f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.12925291
+      objectReference: {fileID: 0}
+    - target: {fileID: 3688900458022550327, guid: 521a83f3e56c1f841929a6f64a59d97f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 20d753f443d03b5418faa7c45bf05e13, type: 2}
+    - target: {fileID: 5066942827751663129, guid: 521a83f3e56c1f841929a6f64a59d97f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.030869752
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066942827751663129, guid: 521a83f3e56c1f841929a6f64a59d97f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.12925288
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754159937823249997, guid: 521a83f3e56c1f841929a6f64a59d97f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.85
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 387525200365711581, guid: 521a83f3e56c1f841929a6f64a59d97f, type: 3}
     - {fileID: 387525200365711570, guid: 521a83f3e56c1f841929a6f64a59d97f, type: 3}
@@ -444,6 +479,12 @@ MonoBehaviour:
 --- !u!4 &6374177240205025402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 387525200176422766, guid: 521a83f3e56c1f841929a6f64a59d97f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6707377653643214612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7936748940534105123 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3688900458022550327, guid: 521a83f3e56c1f841929a6f64a59d97f,
     type: 3}
   m_PrefabInstance: {fileID: 6707377653643214612}
   m_PrefabAsset: {fileID: 0}
