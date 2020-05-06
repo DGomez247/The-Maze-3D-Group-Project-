@@ -12,6 +12,7 @@ public class followtheplayer : MonoBehaviour
     public float maxBites;
     public AudioSource biteSound;
     float biteCound = 0;
+    public Animator animator;
     // Start is called before the first frame update
     public void Start()
     {
@@ -57,18 +58,21 @@ public class followtheplayer : MonoBehaviour
         print("collision");
         if (collision.collider.CompareTag("Player")&&!resting)
         {
-            //StartCoroutine(bite());
+            
+            StartCoroutine(bite());
         }
     }
     private IEnumerator bite()
     {
         biteSound.Play();
         biteCound++;
+        FindObjectOfType<countdown1>().time-=30;
+        animator.SetTrigger("attack");
         resting = true;
         yield return new WaitForSeconds(1);
         if (biteCound == maxBites)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         resting = false;
     }

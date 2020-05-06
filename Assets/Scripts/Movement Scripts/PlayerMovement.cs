@@ -101,7 +101,6 @@ public class PlayerMovement : MonoBehaviour, IPunObservable
             controller.Move(move * workingSpeed * Time.deltaTime);
         }
     }
-
     void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
