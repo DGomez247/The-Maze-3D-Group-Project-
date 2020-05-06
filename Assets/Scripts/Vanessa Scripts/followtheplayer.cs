@@ -82,8 +82,10 @@ public class followtheplayer : MonoBehaviour
     public IEnumerator stun()
     {
         biteSound.Play();
+        animator.SetBool("idle",true);
         resting = true;
         yield return new WaitForSeconds(5);
         resting = false;
+        animator.SetBool("idle",false);
     }
 }
